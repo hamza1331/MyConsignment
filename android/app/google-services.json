@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "1020995126307",
+    "firebase_url": "https://pureartisanapp.firebaseio.com",
+    "project_id": "pureartisanapp",
+    "storage_bucket": "pureartisanapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020995126307:android:df02d899e4a47ab5",
+        "android_client_info": {
+          "package_name": "com.myconsignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020995126307-qg8trkk096v1pvq1fm2upqtf5m7l659h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myconsignment",
+            "certificate_hash": "88b134f9ce3ea24ae9a849f3c7269465ade09ccc"
+          }
+        },
+        {
+          "client_id": "1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWCKmdi41s_Qd7ajyfL0wuGlA8K62aqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020995126307:android:0722da18a0680920",
+        "android_client_info": {
+          "package_name": "com.pureartisan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWCKmdi41s_Qd7ajyfL0wuGlA8K62aqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020995126307:android:2a014e0ed1754797",
+        "android_client_info": {
+          "package_name": "com.puroartesanal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020995126307-5p15qu4b52dqnkr76fm09r8pumb1a1ll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.puroartesanal",
+            "certificate_hash": "88b134f9ce3ea24ae9a849f3c7269465ade09ccc"
+          }
+        },
+        {
+          "client_id": "1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWCKmdi41s_Qd7ajyfL0wuGlA8K62aqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1020995126307-a3rru7s0p9g7vktqp1baf2btok5q2shk.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://pureartisanapp.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1020995126307</string>
+    <string name="google_api_key" translatable="false">AIzaSyBSWCKmdi41s_Qd7ajyfL0wuGlA8K62aqw</string>
+    <string name="google_app_id" translatable="false">1:1020995126307:android:df02d899e4a47ab5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBSWCKmdi41s_Qd7ajyfL0wuGlA8K62aqw</string>
+    <string name="google_storage_bucket" translatable="false">pureartisanapp.appspot.com</string>
+    <string name="project_id" translatable="false">pureartisanapp</string>
+</resources>
