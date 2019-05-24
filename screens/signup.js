@@ -4,7 +4,6 @@ import {Button} from 'react-native-elements';
 import firebase from 'react-native-firebase'
 import {TextField} from 'react-native-material-textfield'
 import { connect } from "react-redux";
-import KeyboardAwareScrollView from "react-native-keyboard-aware-scroll-view"
 import { url } from "./Proxy";
 class Signup extends Component{
     constructor(props){
@@ -48,13 +47,13 @@ class Signup extends Component{
 
 
             <View style={{marginTop:35,marginLeft:20}}>
-              <Text style={{color:'brown',fontSize:40}}>Join Pure Artisan</Text>
+              <Text style={{color:'seagreen',fontSize:40}}>Join My Consignment</Text>
             </View>
             <TextField style={{alignSelf:'center'}}
             label='Full Name'
             value={this.state.name}
             onChangeText={ (name) => this.setState({ name }) }
-            tintColor="darkred"
+            tintColor="green"
             containerStyle={{marginLeft:15,marginRight:15,marginTop:20}}
             
             />
@@ -63,7 +62,7 @@ class Signup extends Component{
             label='Email'
             value={this.state.email}
             onChangeText={ (email) => this.setState({ email }) }
-            tintColor="darkred"
+            tintColor="green"
             containerStyle={{marginLeft:15,marginRight:15}}
             keyboardType='email-address'
             returnKeyType='next'
@@ -74,7 +73,7 @@ class Signup extends Component{
             label='Password'
             value={this.state.pass}
             onChangeText={ (pass) => this.setState({ pass }) }
-            tintColor="darkred"
+            tintColor="green"
             secureTextEntry={true}
             containerStyle={{marginLeft:15,marginRight:15}}
             
@@ -85,11 +84,11 @@ class Signup extends Component{
           
           
           <View style={{alignItems:'center',justifyContenty:'center',marginTop:65}}>
-            <Button title="Register"  onPress={this.handleSubmit} containerStyle={{borderRadius:20,width:'80%'}}  buttonStyle={{backgroundColor:'#B1A54E'}} />
+            <Button title="Register"  onPress={this.handleSubmit} containerStyle={{borderRadius:20,width:'80%'}}  buttonStyle={{backgroundColor:'purple'}} />
          </View>
           <View style={{alignItems:'center',marginTop:10}}>
             <Text>Already a member?</Text>
-            <Text onPress={()=>this.props.navigation.navigate('LoginScreen')} style={{color:'darkred',fontSize:20}}>Go to Login</Text>
+            <Text onPress={()=>this.props.navigation.navigate('LoginScreen')} style={{color:'seagreen',fontSize:20}}>Go to Login</Text>
           </View>
      </ScrollView>
           )
@@ -97,7 +96,7 @@ class Signup extends Component{
         else
         return(
           <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-          <ActivityIndicator size={40} animating color='darkred'/>
+          <ActivityIndicator size={40} animating color='seagreen'/>
           </View>
         )
 }

@@ -140,7 +140,7 @@ class ProviderLogin extends Component{
           <ScrollView ref="rootView" style={{flex:1,backgroundColor:'white'}}>
           <View style={{alignItems:'center',marginTop:2,width:wp('100%'),height:(this.state.orientation==="portrait")?hp('35%'):hp('88.5%')}}>
           <Image 
-          source={require('./art.jpg')}
+          source={require('./my1.png')}
           style={{width:wp('80%'),height:(this.state.orientation==="portrait")?hp('35%'):hp('89%')}}
           />
           </View>
@@ -164,7 +164,7 @@ class ProviderLogin extends Component{
         <KeyboardAvoidingView style={{justifyContenty:'center',width:wp('100%'),height:(this.state.orientation==="portrait")?hp('30%'):hp('50%')}}>
        
           <Text style={{margin:5,fontWeight:'bold',textAlign:'center'}}>OR</Text>
-          <Button title="Continue with Email" onPress={()=>this.props.navigation.navigate('LoginScreen')}  containerStyle={{width:'60%',alignSelf:'center',borderRadius:50}}  buttonStyle={{backgroundColor:'#7F7472',alignSelf:'center',borderRadius:50,width:'100%'}} />
+          <Button title="Continue with Email" onPress={()=>this.props.navigation.navigate('LoginScreen')}  containerStyle={{width:'60%',alignSelf:'center',borderRadius:50}}  buttonStyle={{backgroundColor:'seagreen',alignSelf:'center',borderRadius:50,width:'100%'}} />
        </KeyboardAvoidingView>
    </ScrollView>
       
@@ -172,7 +172,7 @@ class ProviderLogin extends Component{
         else if(this.state.showLogo===false&&this.state.loading===true)
         return(
           <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
-              <ActivityIndicator animating size={40} color='darkred'/>
+              <ActivityIndicator animating size={40} color='seagreen'/>
           </View>
         )
       }

@@ -235,14 +235,14 @@ class Filter extends Component {
       )
     }
     else return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: '#F3F3F2' }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#F4FFF6' }}>
         <ScrollView>
           <Input
             leftIcon={
               <Icon
                 name='ios-search'
                 type='ionicon'
-                color='#B46617'
+                color='darkgreen'
               />
             }
             value={this.state.title}
@@ -253,11 +253,11 @@ class Filter extends Component {
             containerStyle={{ marginBottom: 5, height:50, marginTop: 20, alignItems: 'center' }}
           />
           <View style={{ marginTop: 25, borderBottomColor: 'white', borderBottomWidth: 2, paddingBottom: 10 }}>
-            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: '#B46617' }}>Your budget</Text>
+            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: 'seagreen' }}>Your budget</Text>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-              <Text style={{ marginLeft: 20, fontSize: 20, fontWeight: 'bold', color: '#B46617' }}>${this.state.multiSliderValue[0]} </Text>
+              <Text style={{ marginLeft: 20, fontSize: 20, fontWeight: 'bold', color: 'seagreen' }}>${this.state.multiSliderValue[0]} </Text>
 
-              <Text style={{ marginRight: 20, fontSize: 20, fontWeight: 'bold', color: '#B46617' }}>${this.state.multiSliderValue[1]}</Text>
+              <Text style={{ marginRight: 20, fontSize: 20, fontWeight: 'bold', color: 'seagreen' }}>${this.state.multiSliderValue[1]}</Text>
             </View>
             <MultiSlider
               values={[
@@ -278,7 +278,7 @@ class Filter extends Component {
             />
           </View>
           <View style={{ marginTop: 25, borderBottomColor: 'white', borderBottomWidth: 2, paddingBottom: 10 }}>
-            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: '#B46617' }}>What else?</Text>
+            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: 'seagreen' }}>What else?</Text>
             <View style={{ alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
               <View>
                 <Icon name={this.state.deliverable===true?'check':'inbox'}
@@ -288,8 +288,8 @@ class Filter extends Component {
                       deliverable:!this.state.deliverable
                     })
                   }}
-                  color='#B46617' />
-                <Text style={{ color: '#B46617' }}>Deliverable</Text>
+                  color='seagreen' />
+                <Text style={{ color: 'seagreen' }}>Deliverable</Text>
 
               </View>
               <View>
@@ -300,14 +300,14 @@ class Filter extends Component {
                     })
                   }}
                   type={this.state.trade===true?'font-awesome':'ionicon'}
-                  color='#B46617' />
-                <Text style={{ color: '#B46617' }}>Acceptance & Trade</Text>
+                  color='seagreen' />
+                <Text style={{ color: 'seagreen' }}>Acceptance & Trade</Text>
 
               </View>
             </View>
           </View>
           <View style={{ marginTop: 25, borderBottomColor: 'white', borderBottomWidth: 2, paddingBottom: 10 }}>
-            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: '#B46617' }}>Publication date</Text>
+            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: 'seagreen' }}>Publication date</Text>
             <View style={{ alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
               <View onTouchEnd={()=>{
                 this.setState({
@@ -316,8 +316,8 @@ class Filter extends Component {
                 })
 
               }}>
-                <Text style={{ fontSize: this.state.days===1?30:20, color: '#B46617', fontWeight: 'bold', alignSelf: 'center' }}>24</Text>
-                <Text style={{ color: '#B46617',textDecorationLine:this.state.days===1?'underline':'none',fontWeight:this.state.days===1?'bold':'normal' }}>Hours</Text>
+                <Text style={{ fontSize: this.state.days===1?30:20, color: 'seagreen', fontWeight: 'bold', alignSelf: 'center' }}>24</Text>
+                <Text style={{ color: 'seagreen',textDecorationLine:this.state.days===1?'underline':'none',fontWeight:this.state.days===1?'bold':'normal' }}>Hours</Text>
 
               </View>
               <View onTouchEnd={()=>{
@@ -326,9 +326,9 @@ class Filter extends Component {
                   daysFilter:true
                 })
               }}>
-                <Text style={{ fontSize: this.state.days===7?30:20, color: '#B46617', fontWeight: 'bold', alignSelf: 'center' }}>7</Text>
+                <Text style={{ fontSize: this.state.days===7?30:20, color: 'seagreen', fontWeight: 'bold', alignSelf: 'center' }}>7</Text>
                 
-                <Text style={{ color: '#B46617',textDecorationLine:this.state.days===7?'underline':'none',fontWeight:this.state.days===7?'bold':'normal' }}>Days</Text>
+                <Text style={{ color: 'seagreen',textDecorationLine:this.state.days===7?'underline':'none',fontWeight:this.state.days===7?'bold':'normal' }}>Days</Text>
 
               </View>
               <View onTouchEnd={()=>{
@@ -338,14 +338,14 @@ class Filter extends Component {
                 })
 
               }}>
-                <Text style={{ fontSize: this.state.days===30?30:20, color: '#B46617', fontWeight: 'bold', alignSelf: 'center' }}>30</Text>
-                <Text style={{ color: '#B46617',textDecorationLine:this.state.days===30?'underline':'none',fontWeight:this.state.days===30?'bold':'normal' }}>Days</Text>
+                <Text style={{ fontSize: this.state.days===30?30:20, color: 'seagreen', fontWeight: 'bold', alignSelf: 'center' }}>30</Text>
+                <Text style={{ color: 'seagreen',textDecorationLine:this.state.days===30?'underline':'none',fontWeight:this.state.days===30?'bold':'normal' }}>Days</Text>
 
               </View>
             </View>
           </View>
           <View style={{ marginTop: 25, borderBottomColor: 'white', borderBottomWidth: 2, paddingBottom: 10 }}>
-            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: '#B46617' }}>Search By Distance</Text>
+            <Text style={{ marginLeft: 20, fontSize: 25, fontWeight: 'bold', color: 'seagreen' }}>Search By Distance</Text>
             <View style={{ alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
               <View onTouchEnd={()=>{
 
@@ -355,8 +355,8 @@ class Filter extends Component {
                 this.handleLocationSearch()
 
               }}>
-                <Text style={{ fontSize: 20, color: '#B46617', fontWeight: 'bold', alignSelf: 'center' }}>50</Text>
-                <Text style={{ color: '#B46617',textAlign:'center' }}>Miles</Text>
+                <Text style={{ fontSize: 20, color: 'seagreen', fontWeight: 'bold', alignSelf: 'center' }}>50</Text>
+                <Text style={{ color: 'seagreen',textAlign:'center' }}>Miles</Text>
 
               </View>
               <View onTouchEnd={()=>{
@@ -366,8 +366,8 @@ class Filter extends Component {
                 this.handleLocationSearch()
 
               }}>
-                <Text style={{ fontSize: 20, color: '#B46617', fontWeight: 'bold', alignSelf: 'center' }}>100</Text>
-                <Text style={{ color: '#B46617',textAlign:'center' }}>Miles</Text>
+                <Text style={{ fontSize: 20, color: 'seagreen', fontWeight: 'bold', alignSelf: 'center' }}>100</Text>
+                <Text style={{ color: 'seagreen',textAlign:'center' }}>Miles</Text>
 
               </View>
               <View onTouchEnd={()=>{
@@ -378,8 +378,8 @@ class Filter extends Component {
                 this.handleLocationSearch()
 
               }}>
-                <Text style={{ fontSize: 20, color: '#B46617', fontWeight: 'bold', alignSelf: 'center' }}>200</Text>
-                <Text style={{ color: '#B46617',textAlign:'center' }}>Miles</Text>
+                <Text style={{ fontSize: 20, color: 'seagreen', fontWeight: 'bold', alignSelf: 'center' }}>200</Text>
+                <Text style={{ color: 'seagreen',textAlign:'center' }}>Miles</Text>
 
               </View>
             </View>

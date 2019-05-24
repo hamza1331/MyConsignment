@@ -136,24 +136,24 @@ class Shipping extends Component {
     <Icon  containerStyle={{marginBottom:8}}
     name="ios-arrow-round-back"
     type="ionicon"
-    color="black"
+    color="green"
     size={40}
     onPress={()=>this.props.navigation.navigate('Profile')}
   
     />
       }
-      centerComponent={{ text: 'Shipping', style: { color: '#B46617',fontSize:20,marginBottom:10} }}
-      containerStyle={{backgroundColor:'white', borderTopLeftRadius:15,
+      centerComponent={{ text: 'Shipping', style: { color: 'darkgreen',fontSize:20,marginBottom:10} }}
+      containerStyle={{backgroundColor:'#F4FFF6', borderTopLeftRadius:15,
       borderTopRightRadius:15
     }}
       />
-      <ScrollView>
+      <ScrollView style={{backgroundColor:'#F4FFF6'}}>
    <View style={{marginTop:25,marginLeft:15}}>
-              <Text style={{color:'darkorange',fontSize:30}}>Shipping Profile</Text>
+              <Text style={{color:'seagreen',fontSize:30}}>Shipping Profile</Text>
             </View>
             <View style={{borderBottomColor:'gray',borderBottomWidth:1,paddingBottom:10}}>
             <View style={{marginTop:15,marginLeft:15}}>
-              <Text style={{color:'darkred',fontSize:22}}>Domestic</Text>
+              <Text style={{color:'darkcyan',fontSize:22}}>Domestic</Text>
             </View>
 <Dropdown containerStyle={{marginLeft:15,marginRight:15}} 
         label='Company'
@@ -166,7 +166,7 @@ class Shipping extends Component {
         suffix="$"
         value={this.state.domCost}
         onChangeText={(price) => this.setState({domCost:price }) }
-        tintColor="darkred"
+        tintColor="green"
         keyboardType='numeric'
         containerStyle={{marginLeft:15,marginRight:15}}
       />
@@ -175,7 +175,7 @@ class Shipping extends Component {
         label='Fast Delivery Cost'
         keyboardType='numeric'
         onChangeText={ (price) => this.setState({domAdditional:price}) }
-        tintColor="darkred"
+        tintColor="green"
         value={this.state.domAdditional}
         containerStyle={{marginLeft:15,marginRight:15}}
       />
@@ -184,7 +184,7 @@ class Shipping extends Component {
       <TextField
         label='Delivery Time'
         keyboardType='numeric'
-        tintColor="darkred"
+        tintColor="green"
         value={this.state.domDelivery.from}
         onChangeText={text=>{
           let {domDelivery} = this.state
@@ -200,7 +200,7 @@ class Shipping extends Component {
       </View>
       <View style={{flexBasis:'45%'}}>
       <TextField
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
         keyboardType='numeric'
         label='Maximum time'
@@ -217,7 +217,7 @@ class Shipping extends Component {
       </View>
       <View>
             <View style={{marginTop:15,marginLeft:15}}>
-              <Text style={{color:'darkred',fontSize:22}}>International</Text>
+              <Text style={{color:'darkcyan',fontSize:22}}>International</Text>
             </View>
 <Dropdown containerStyle={{marginLeft:15,marginRight:15}} 
         label='Company'
@@ -230,7 +230,7 @@ class Shipping extends Component {
         value={this.state.intCost}
         onChangeText={(price) => this.setState({intCost:price }) }
         keyboardType='numeric'
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
       />
       <TextField
@@ -238,7 +238,7 @@ class Shipping extends Component {
         value={this.state.intAddtional}
         onChangeText={ (price) => this.setState({intAddtional:price}) }
         keyboardType='numeric'
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
       />
       <View style={{marginLeft:7,marginTop:7,flexDirection:'row'}}>
@@ -246,7 +246,7 @@ class Shipping extends Component {
       <TextField
         label='Delivery Time'        
         keyboardType='numeric'
-        tintColor="darkred"
+        tintColor="green"
         value={this.state.intDelivery.from}
         onChangeText={text=>{
           let {intDelivery} = this.state
@@ -264,7 +264,7 @@ class Shipping extends Component {
       <TextField
         keyboardType='numeric'
         label='Maximum time'
-        tintColor="darkred"
+        tintColor="green"
         value={this.state.intDelivery.to}
         onChangeText={text=>{
           let {intDelivery} = this.state
@@ -278,7 +278,7 @@ class Shipping extends Component {
       </View>
       </View>
         </ScrollView>
-        <View onTouchEnd={this.handleSubmit} style={{backgroundColor:'#B46617',position: 'relative', left: 0, right: 0, bottom: 0,height:40,width:'100%',alignItems:'center',justifyContent:'center'}}>
+        <View onTouchEnd={this.handleSubmit} style={{backgroundColor:'#50BE64',position: 'relative', left: 0, right: 0, bottom: 0,height:40,width:'100%',alignItems:'center',justifyContent:'center'}}>
        {this.state.loading===false && <Text style={{fontSize:20,color:'white',fontWeight:'bold'}}>Save</Text>}
        {this.state.loading && <ActivityIndicator size={18} color='white' animating/>}
          </View>

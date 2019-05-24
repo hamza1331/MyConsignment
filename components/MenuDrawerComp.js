@@ -74,7 +74,7 @@ class MenuDrawer extends React.Component{
 render(){
     return(  
     <View style={{flex:1}}>
-     <View style={{backgroundColor:'#C3B09D',height:160,width:'100%',flexDirection:'row'}}>
+     <View style={{backgroundColor:'#00C78B',height:160,width:'100%',flexDirection:'row'}}>
      <Avatar containerStyle={{marginLeft:30,marginTop:40}} onPress={()=>{this.props.navigation.navigate('Profile')}}
        size="large"
        rounded
@@ -115,14 +115,14 @@ render(){
       height:40,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor:'#D1802E',
+      backgroundColor:'darkturquoise',
       borderRadius:10,
       marginTop:50,
       top:'50%',
       bottom:'10%',
       marginBottom:15
       }}>
-            <Button title="All categories" onPress={this.Openmodal} buttonStyle={{backgroundColor:'#D1802E',height:40}}/>
+            <Button title="All categories" onPress={this.Openmodal} buttonStyle={{backgroundColor:'darkturquoise',height:40}}/>
           </View>
           </View>
           <Modal isVisible={this.state.ismodalVisible} style={{backgroundColor:'white',marginBottom:0,marginTop:0,marginLeft:0,marginRight:'17.5%',borderRadius:8}} onBackButtonPress={this.Closemodal} swipeDirection="left" onSwipeComplete={this.Closemodal}>

@@ -166,20 +166,20 @@ class Profila extends Component {
         <Icon  
         name="ios-menu"
         type="ionicon"
-        color="#4d2600"
+        color="green"
         size={Platform.OS==='ios'?30:40}
          onPress={(e)=>{this.props.navigation.toggleDrawer(e)}}
         />
           }
           centerComponent={
             <View style={{flexDirection:'row',marginBottom:8}}>
-                  <Text style={{fontSize:20,fontWeight:'bold',color:'darkred'}}>MY PROFILE</Text>
+                  <Text style={{fontSize:20,fontWeight:'bold',color:'green'}}>MY PROFILE</Text>
             </View>
           }
        rightComponent={
          <View style={{flexDirection:'row',marginBottom:8}}>
            
-           <Text onPress={()=>this.props.navigation.navigate('Shipping')} style={{fontSize:16,color:'darkred',fontWeight:'bold'}}>
+           <Text onPress={()=>this.props.navigation.navigate('Shipping')} style={{fontSize:16,color:'green',fontWeight:'bold'}}>
              Shipping
            </Text>
          </View>
@@ -195,7 +195,7 @@ class Profila extends Component {
   {this.state.profilePic.length>0&&<Avatar containerStyle={{flexBasis:'25%',marginTop:5}}
   size="large"
   rounded
-  title="AJ"
+  title="Add Photo"
   source={{uri:this.state.profilePic}}
   onPress={this.selectPhotoTapped}
   activeOpacity={0.7}
@@ -209,14 +209,14 @@ class Profila extends Component {
 />}
 </View>
 <View style={{marginTop:10,alignItems:'center'}}>
-  <Button buttonStyle={{width:300,borderRadius:15,backgroundColor:'#B17E4E'}} disabled disabledStyle={{backgroundColor:'grey'}} disabledTitleStyle={{color:'white'}} title="Become Pro (Coming Soon)"/>
+  <Button buttonStyle={{width:300,borderRadius:15,backgroundColor:'#B17E4E'}} disabled disabledStyle={{backgroundColor:'#58685b'}} disabledTitleStyle={{color:'white'}} title="Become Pro (Coming Soon)"/>
 </View>
 <View style={styles.spCount}>
 <View style={{flexDirection:'row',marginTop:5,marginLeft:7}}>
 <Icon containerStyle={{marginRight:5}}
     name='ios-stats'
     type='ionicon'
-    color='black'
+    color='green'
     />
   <Text style={{fontWeight:'bold',marginTop:5}}>{this.state.sales.length>0?this.state.sales.length:0}</Text>
   <Text style={{marginTop:5,marginLeft:5}}>Items on sale</Text>
@@ -225,8 +225,8 @@ class Profila extends Component {
 <ScrollableTabView
     style={{marginTop: 20}}
     initialPage={0}
-    tabBarActiveTextColor='orange'
-    tabBarUnderlineStyle={{backgroundColor:'orange'}}
+    tabBarActiveTextColor='seagreen'
+    tabBarUnderlineStyle={{backgroundColor:'seagreen'}}
     renderTabBar={() => <ScrollableTabBar />}
     >
   <ScrollView tabLabel="On Sale">
@@ -239,7 +239,7 @@ class Profila extends Component {
       uri:sale.imageLinks[0],
      }}
      />  
- <View style={{marginLeft:15,marginTop:20,borderBottomColor:'#4d2600',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
+ <View style={{marginLeft:15,marginTop:20,borderBottomColor:'seagreen',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
  <TouchableOpacity onPress={()=>{
             this.setState({
               showLoading:true
@@ -272,7 +272,7 @@ class Profila extends Component {
       uri:favorite.imageLinks[0],
      }}
      />  
- <View style={{marginLeft:15,marginTop:20,borderBottomColor:'#4d2600',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
+ <View style={{marginLeft:15,marginTop:20,borderBottomColor:'seagreen',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
  <TouchableOpacity onPress={()=>{
             this.setState({
               showLoading:true

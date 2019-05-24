@@ -88,7 +88,7 @@ addFavorite(){
    <Modal isVisible={this.props.showDescription} 
    onBackButtonPress={()=>this.props.hideDescriptionModal()}
    style={{borderRadius:15,
-       backgroundColor:'#F3F3F5',
+       backgroundColor:'#E9FFF8',
        margin:0
        }}>
        <SafeAreaView style={{flex:1}}>
@@ -97,7 +97,7 @@ addFavorite(){
      <Icon  containerStyle={{marginBottom:8}}
      name="ios-arrow-round-back"
      type="ionicon"
-     color="black"
+     color="green"
      size={40}
      onPress={()=>this.props.hideDescriptionModal()}
      />
@@ -108,13 +108,13 @@ addFavorite(){
         <Icon containerStyle={{marginRight:10}}
         name={this.state.favorite===true?"ios-heart":"ios-heart-empty"}
         type="ionicon"
-        color="black"
+        color="green"
         size={30}
         onPress={this.addFavorite}
         />
          </View>
        }
-       containerStyle={{backgroundColor:'#F3F3F5', borderTopLeftRadius:15,
+       containerStyle={{backgroundColor:'#E3FFF1', borderTopLeftRadius:15,
        borderTopRightRadius:15}}
        />
          <ScrollView>
@@ -161,7 +161,7 @@ addFavorite(){
    />
      </View>
        </View>
-       <View style={{flex:1,marginTop:5,marginBottom:10,borderBottomColor:'darkred',borderBottomWidth:1}}>
+       <View style={{flex:1,marginTop:5,marginBottom:10,borderBottomColor:'gray',borderBottomWidth:1}}>
         <Text style={{fontSize:16,fontWeight:'bold',textAlign:'center'}}>Shipping Details</Text>
         <View style={{width:'80%',alignSelf:'center',marginTop:4}}>
         <Text style={{fontSize:14,fontWeight:'bold',textDecorationLine:'underline'}}>Domestic</Text>
@@ -189,7 +189,7 @@ addFavorite(){
        <View onTouchEnd={()=>{
          this.props.hideDescriptionModal()
          this.props.navigation.navigate('Credit')
-       }} style={{backgroundColor:'#D1802E',position: 'absolute', left: 0, right: 0, bottom: 0,height:50,width:'100%',alignItems:'center',justifyContent:'center'}}>
+       }} style={{backgroundColor:'#50BE64',position: 'absolute', left: 0, right: 0, bottom: 0,height:50,width:'100%',alignItems:'center',justifyContent:'center'}}>
        <Text style={{fontSize:20,color:'white',fontWeight:'bold'}}>Purchase</Text>
          </View>
    </SafeAreaView>

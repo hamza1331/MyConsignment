@@ -72,13 +72,13 @@ import { url } from "./Proxy";
      render() {
        return (
         <SafeAreaView style={{flex:1}}>
-        <View style={{flexDirection:'row',borderBottomColor:'gray',borderBottomWidth:2,paddingBottom:5}}>
-        <TouchableOpacity onPress={()=>this.props.navigation.navigate('PaymentInfo')}><Text style={{fontSize:30,marginLeft:10,marginTop:10}}>X</Text></TouchableOpacity>
-        <Text style={{fontSize:20,marginLeft:20,marginTop:20,fontWeight:'bold'}}>Bank Acount Details</Text>
+        <View style={{flexDirection:'row',borderBottomColor:'gray',borderBottomWidth:2,paddingBottom:5,backgroundColor:'seagreen'}}>
+        <TouchableOpacity onPress={()=>this.props.navigation.navigate('PaymentInfo')}><Text style={{fontSize:30,marginLeft:10,marginTop:10,color:'white'}}>X</Text></TouchableOpacity>
+        <Text style={{fontSize:20,marginLeft:20,marginTop:20,fontWeight:'bold',color:'white'}}>Bank Acount Details</Text>
         <Icon
         name='ios-arrow-dropdown'
         type='ionicon'
-        color='black'
+        color='white'
         size={15}
         containerStyle={{marginTop:28,marginLeft:10}}
          />
@@ -91,7 +91,7 @@ import { url } from "./Proxy";
         label='Account Holder Name'
         value={this.state.account_holder_name}
         onChangeText={ (account_holder_name) => this.setState({ account_holder_name }) }
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
       />
       </KeyboardAvoidingView>
@@ -100,7 +100,7 @@ import { url } from "./Proxy";
         label='Account Number'
         value={this.state.account_number}
         onChangeText={ (account_number) => this.setState({ account_number }) }
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
       />
       </KeyboardAvoidingView>
@@ -109,7 +109,7 @@ import { url } from "./Proxy";
         label='Routing Number'
         value={this.state.routing_number}
         onChangeText={ (routing_number) => this.setState({ routing_number }) }
-        tintColor="darkred"
+        tintColor="green"
         placeholder='Routing Number on Bank Check'
         containerStyle={{marginLeft:15,marginRight:15}}
       />
@@ -117,7 +117,7 @@ import { url } from "./Proxy";
      
   </View>
   <View style={{alignItems:'center',marginTop:10,marginBottom:10}}>
-  <TouchableOpacity disabled={this.state.uploading} onPress={this.handleSubmit} style={{width:wp('90%'),height:hp('5%'),backgroundColor:'darkred',borderRadius:15,alignItems:'center',justifyContent:'center'}}>
+  <TouchableOpacity disabled={this.state.uploading} onPress={this.handleSubmit} style={{width:wp('90%'),height:hp('5%'),backgroundColor:'darkgreen',borderRadius:15,alignItems:'center',justifyContent:'center'}}>
     {this.state.uploading===false && <Text style={{color:'white',fontSize:20}}>SUBMIT</Text>}
     {this.state.uploading===true && <ActivityIndicator size={20} animating color='white'/>}
   </TouchableOpacity>

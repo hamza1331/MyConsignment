@@ -198,10 +198,10 @@ class ChatwGifted extends Component {
         {...props}
         wrapperStyle={{
           right: {
-      backgroundColor: 'brown',
+      backgroundColor: 'seagreen',
     },
     left:{
-      backgroundColor:'#e6e6e6',
+      backgroundColor:'#DCF0FF',
     }
         }}
         textProps={{
@@ -326,7 +326,7 @@ handleImageUpload(){
 }
   render() {
     return (
-      <SafeAreaView style={{flex:1,backgroundColor:'#F3F3F2'}}>
+      <SafeAreaView style={{flex:1,backgroundColor:'#F3FDFF'}}>
          <Header placement="left"
       leftComponent={
     <Icon  containerStyle={{marginBottom:8}}
@@ -345,7 +345,7 @@ handleImageUpload(){
   <Icon containerStyle={{marginRight:10}}
   name="ios-image"
   type="ionicon"
-  color="darkorange"
+  color="green"
   onPress={this.selectPhotoTapped}
   size={30}
   />
@@ -353,7 +353,7 @@ handleImageUpload(){
         
         </View>
       }
-      containerStyle={{backgroundColor:'#F3F3F6', borderTopLeftRadius:15,
+      containerStyle={{backgroundColor:'#E7FCFF', borderTopLeftRadius:15,
       borderTopRightRadius:15,opacity:0.85
      }}
       />

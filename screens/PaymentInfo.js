@@ -227,7 +227,7 @@ class PaymentInfo extends Component {
        /> */}
        <Header    placement="left"
                   centerComponent={{ text: 'Payment Info', style: { color: 'white',fontSize:22,marginBottom:10} }}
-                  containerStyle={{backgroundColor:'#4d2600',
+                  containerStyle={{backgroundColor:'seagreen',
                   }}
                   rightContainerStyle={{flexBasis:'30%',alignItems:'center'}}
                   collapsable={true}
@@ -258,7 +258,7 @@ class PaymentInfo extends Component {
                             uncheckedIcon='circle-o'
                             checked={this.state.showIndividual}
                             onPress={this.showIndividualForm}
-                            checkedColor='darkred'
+                            checkedColor='green'
                             containerStyle={{ marginLeft: 25, backgroundColor: 'white', borderWidth: 0 }}
                         />
                         <CheckBox
@@ -269,7 +269,7 @@ class PaymentInfo extends Component {
                             checked={this.state.showBusiness}
                             onPress={this.showBusinessForm}
                             containerStyle={{ marginLeft: 25, backgroundColor: 'white', borderWidth: 0 }}
-                            checkedColor='darkred'
+                            checkedColor='green'
                         />
                     </View>
                     {this.state.showIndividual && <View style={{ marginTop: 5 }}>
@@ -281,7 +281,7 @@ class PaymentInfo extends Component {
                                 label='First Name'
                                 value={this.state.first_name}
                                 onChangeText={(first_name) => this.setState({ first_name })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
                         </KeyboardAvoidingView>
@@ -290,7 +290,7 @@ class PaymentInfo extends Component {
                                 label='Last Name'
                                 value={this.state.last_name}
                                 onChangeText={(last_name) => this.setState({ last_name })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
                         </KeyboardAvoidingView>
@@ -299,7 +299,7 @@ class PaymentInfo extends Component {
                                 label='Email'
                                 value={this.state.email}
                                 onChangeText={(email) => this.setState({ email })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='email-address'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
@@ -309,7 +309,7 @@ class PaymentInfo extends Component {
                                 label='Date of Birth'
                                 value={this.state.dob}
                                 onTouchEnd={this.openDatePickerAndroid}
-                                tintColor="darkred"
+                                tintColor="green"
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
                         </KeyboardAvoidingView>}
@@ -341,7 +341,7 @@ class PaymentInfo extends Component {
                                 label='Line 1'
                                 value={this.state.line1}
                                 onChangeText={(line1) => this.setState({ line1 })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 placeholder='Street, PO BOX or Company'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                                 characterRestriction={600}
@@ -352,7 +352,7 @@ class PaymentInfo extends Component {
                                 label='Line 2'
                                 value={this.state.line2}
                                 onChangeText={(line2) => this.setState({ line2 })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 placeholder='Apartment, Suite, or Building'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                                 characterRestriction={600}
@@ -363,7 +363,7 @@ class PaymentInfo extends Component {
                                 label='Postal Code'
                                 value={this.state.postal_code}
                                 onChangeText={(postal_code) => this.setState({ postal_code })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='number-pad'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
@@ -384,7 +384,7 @@ class PaymentInfo extends Component {
                                 label='City'
                                 value={this.state.city}
                                 onChangeText={(city) => this.setState({ city })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
                         </KeyboardAvoidingView>
@@ -393,7 +393,7 @@ class PaymentInfo extends Component {
                                 label='Mobile Phone'
                                 value={this.state.phone}
                                 onChangeText={(phone) => this.setState({ phone })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='phone-pad'
                                 placeholder='+15551234567'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
@@ -407,7 +407,7 @@ class PaymentInfo extends Component {
                                 label='Social Security Number (SSN)'
                                 value={this.state.ssn}
                                 onChangeText={(ssn) => this.setState({ ssn })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='number-pad'
                                 placeholder='001234567'
                                 maxLength={9}
@@ -424,7 +424,7 @@ class PaymentInfo extends Component {
                                 label='Industry'
                                 value={this.state.mcc}
                                 onChangeText={(mcc) => this.setState({ mcc })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='numeric'
                                 placeholder='Merchant Category Code'
                                 maxLength={5}
@@ -436,7 +436,7 @@ class PaymentInfo extends Component {
                                 label='Business Web'
                                 value={this.state.businesweb}
                                 onChangeText={(businesweb) => this.setState({ businesweb })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='url'
                                 placeholder='Web or Social Profile Link'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
@@ -452,7 +452,7 @@ class PaymentInfo extends Component {
                                 label='Name'
                                 value={this.state.name}
                                 onChangeText={(name) => this.setState({ name })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
                         </KeyboardAvoidingView>
@@ -465,7 +465,7 @@ class PaymentInfo extends Component {
                                 label='Line 1'
                                 value={this.state.line1}
                                 onChangeText={(line1) => this.setState({ line1 })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 placeholder='Street, PO BOX or Company'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                                 characterRestriction={600}
@@ -476,7 +476,7 @@ class PaymentInfo extends Component {
                                 label='Line 2'
                                 value={this.state.line2}
                                 onChangeText={(line2) => this.setState({ line2 })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 placeholder='Apartment, Suite, or Building'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                                 characterRestriction={600}
@@ -487,7 +487,7 @@ class PaymentInfo extends Component {
                                 label='Postal Code'
                                 value={this.state.postal_code}
                                 onChangeText={(postal_code) => this.setState({ postal_code })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='number-pad'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
@@ -508,7 +508,7 @@ class PaymentInfo extends Component {
                                 label='City'
                                 value={this.state.city}
                                 onChangeText={(city) => this.setState({ city })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
                             />
                         </KeyboardAvoidingView>
@@ -517,7 +517,7 @@ class PaymentInfo extends Component {
                                 label='Mobile Phone'
                                 value={this.state.phone}
                                 onChangeText={(phone) => this.setState({ phone })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='number-pad'
                                 placeholder='+15551234567'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
@@ -531,7 +531,7 @@ class PaymentInfo extends Component {
                                 label='Tax ID'
                                 value={this.state.taxId}
                                 onChangeText={(taxId) => this.setState({ taxId })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 placeholder='00-0000000'
                                 maxLength={10}
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
@@ -546,7 +546,7 @@ class PaymentInfo extends Component {
                                 label='Business Web'
                                 value={this.state.businesweb}
                                 onChangeText={(businesweb) => this.setState({ businesweb })}
-                                tintColor="darkred"
+                                tintColor="green"
                                 keyboardType='url'
                                 placeholder='Web or Social Profile Link'
                                 containerStyle={{ marginLeft: 15, marginRight: 15 }}
@@ -554,7 +554,7 @@ class PaymentInfo extends Component {
                         </KeyboardAvoidingView> 
                     </View>}
                     <View style={{ alignItems: 'center', marginTop: 10, marginBottom: 10 }}>
-                        <TouchableOpacity disabled={this.state.uploading} onPress={this.uploadData} style={{ width: wp('90%'), height: hp('5%'), backgroundColor: 'darkred', borderRadius: 15, alignItems: 'center', justifyContent: 'center' }}>
+                        <TouchableOpacity disabled={this.state.uploading} onPress={this.uploadData} style={{ width: wp('90%'), height: hp('5%'), backgroundColor: 'darkgreen', borderRadius: 15, alignItems: 'center', justifyContent: 'center' }}>
                             {this.state.uploading === false && <Text style={{ color: 'white', fontSize: 20 }}>SUBMIT</Text>}
                             {this.state.uploading === true && <ActivityIndicator size={20} animating color='white' />}
                         </TouchableOpacity>

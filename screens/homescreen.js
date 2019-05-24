@@ -347,7 +347,7 @@ class HomeScreen extends Component {
         <Icon  
         name="ios-menu"
         type="ionicon"
-        color="#4d2600"
+        color="green"
         size={Platform.OS==='ios'?30:40}
          onPress={(e)=>{this.props.navigation.toggleDrawer(e)}}
         />
@@ -364,7 +364,7 @@ class HomeScreen extends Component {
                      color='gray'
              />
            }
-             placeholder={'Search Pure Artisan'}
+             placeholder={'Search My Consignment'}
              shake={true}
              inputContainerStyle={{width:"100%",backgroundColor:'white',borderRadius:12,borderBottomColor:'white'}}
              containerStyle={{marginBottom:23,height:45,flex:1,alignItems:'center'}}
@@ -372,7 +372,7 @@ class HomeScreen extends Component {
                <Icon
                name='clear'
                type='material'
-               color='darkred'
+               color='green'
                />
              }
            />:
@@ -401,10 +401,10 @@ class HomeScreen extends Component {
            />
           }
           rightComponent={
-            <Text onPress={()=>this.props.navigation.navigate("Filter")} style={{fontSize:20,color:'brown'}}>Filter</Text>
+            <Text onPress={()=>this.props.navigation.navigate("Filter")} style={{fontSize:20,color:'green'}}>Filter</Text>
         
        }
-       containerStyle={{backgroundColor:'#F3F3F2',opacity:0.8
+       containerStyle={{backgroundColor:'#F1FDFF',opacity:0.8
       }}
        />
 
@@ -593,7 +593,7 @@ class HomeScreen extends Component {
                 this.props.showDescriptionModal()
             })
             }}
-            buttonStyle={{borderRadius: 9, marginLeft: 0, marginRight: 0, marginBottom:0,backgroundColor:'#804103'}}
+            buttonStyle={{borderRadius: 9, marginLeft: 0, marginRight: 0, marginBottom:0,backgroundColor:'darkturquoise'}}
             title='VIEW' 
             />
   </CardAction>
@@ -645,7 +645,7 @@ class HomeScreen extends Component {
       height:40,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor:'#D1802E',
+      backgroundColor:'palegreen',
       borderRadius:12,
       bottom:'20%',
       marginBottom:25
@@ -668,7 +668,7 @@ class HomeScreen extends Component {
               else{
                 this.props.showListingCategories()
               }
-              }} buttonStyle={{backgroundColor:'#D1802E',height:40}}/>
+              }} buttonStyle={{backgroundColor:'palegreen',height:40}} titleStyle={{color:'black'}}/>
           </View>
           </View>
           <CardDesp navigation={this.props.navigation} />
@@ -681,7 +681,7 @@ class HomeScreen extends Component {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor:'#F3F3F2',
+      backgroundColor:'#F3FDFF',
     },
     TouchableOpacityStyle: {
       position: 'absolute',

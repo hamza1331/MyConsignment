@@ -50,7 +50,7 @@ import { setChatDataAction } from "../store/actions/actions";
             <StatusBar barStyle='light-content'/>
             <Header  placement="left"
                   centerComponent={{ text: 'Conversations', style: { color: 'white',fontSize:22,marginBottom:10} }}
-                  containerStyle={{backgroundColor:'#4d2600',
+                  containerStyle={{backgroundColor:'seagreen',
                   }}
                   leftComponent={
                     <Icon  
@@ -79,7 +79,7 @@ import { setChatDataAction } from "../store/actions/actions";
                       uri:item.buyerProfilePic,
                      }}
                      />  
-                 <View style={{marginLeft:15,marginTop:20,borderBottomColor:'#4d2600',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
+                 <View style={{marginLeft:15,marginTop:20,borderBottomColor:'darkgreen',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
                  <TouchableOpacity onPress={()=>{
                            this.props.setChatData(item)
                            this.props.navigation.navigate('Chat')
@@ -100,7 +100,7 @@ import { setChatDataAction } from "../store/actions/actions";
                       uri:item.sellerProfilePic,
                      }}
                      />  
-                 <View style={{marginLeft:15,marginTop:20,borderBottomColor:'#4d2600',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
+                 <View style={{marginLeft:15,marginTop:20,borderBottomColor:'darkgreen',borderBottomWidth:2,paddingBottom:15,flexBasis:'70%'}}>
                  <TouchableOpacity onPress={()=>{
                     this.props.setChatData(item)
                     this.props.navigation.navigate('Chat')

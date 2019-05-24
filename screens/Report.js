@@ -85,13 +85,13 @@ import { url } from "./Proxy";
     ]
        return (
         <SafeAreaView style={{flex:1}}>
-        <View style={{flexDirection:'row',borderBottomColor:'gray',borderBottomWidth:2,paddingBottom:5}}>
-        <TouchableOpacity onPress={()=>this.props.navigation.navigate('HomeScreen')}><Text style={{fontSize:30,marginLeft:10,marginTop:10}}>X</Text></TouchableOpacity>
-        <Text style={{fontSize:20,marginLeft:20,marginTop:20,fontWeight:'bold'}}>REPORT/SUGGESTION</Text>
+        <View style={{flexDirection:'row',borderBottomColor:'gray',borderBottomWidth:2,paddingBottom:5,backgroundColor:'seagreen'}}>
+        <TouchableOpacity onPress={()=>this.props.navigation.navigate('HomeScreen')}><Text style={{fontSize:30,marginLeft:10,marginTop:10,color:'white'}}>X</Text></TouchableOpacity>
+        <Text style={{fontSize:20,marginLeft:20,marginTop:20,fontWeight:'bold',color:'white'}}>REPORT/SUGGESTION</Text>
         <Icon
         name='ios-arrow-dropdown'
         type='ionicon'
-        color='black'
+        color='white'
         size={15}
         containerStyle={{marginTop:28,marginLeft:10}}
          />
@@ -104,7 +104,7 @@ import { url } from "./Proxy";
         label='Title'
         value={this.state.title}
         onChangeText={ (title) => this.setState({ title }) }
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
       />
       </KeyboardAvoidingView>
@@ -113,7 +113,7 @@ import { url } from "./Proxy";
         label='Description'
         value={this.state.description}
         onChangeText={ (description) => this.setState({ description }) }
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
    characterRestriction={600}
       />
@@ -132,7 +132,7 @@ import { url } from "./Proxy";
      
   </View>
   <View style={{alignItems:'center',marginTop:10,marginBottom:10}}>
-  <TouchableOpacity disabled={this.state.uploading} onPress={this.handleSubmit} style={{width:wp('90%'),height:hp('5%'),backgroundColor:'darkred',borderRadius:15,alignItems:'center',justifyContent:'center'}}>
+  <TouchableOpacity disabled={this.state.uploading} onPress={this.handleSubmit} style={{width:wp('90%'),height:hp('5%'),backgroundColor:'darkgreen',borderRadius:15,alignItems:'center',justifyContent:'center'}}>
     {this.state.uploading===false && <Text style={{color:'white',fontSize:20}}>SUBMIT</Text>}
     {this.state.uploading===true && <ActivityIndicator size={20} animating color='white'/>}
   </TouchableOpacity>

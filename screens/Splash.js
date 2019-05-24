@@ -49,9 +49,9 @@ class Splash extends Component {
     return (
       <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
       <Image
-      source={require('./splash.jpg')}
+      source={require('./splash.png')}
       />
-     <ActivityIndicator animating size={40} color='darkred'/>
+     <ActivityIndicator animating size={40} color='green'/>
       </View>
     )
   }

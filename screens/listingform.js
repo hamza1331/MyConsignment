@@ -15,7 +15,7 @@ import { url } from "./Proxy";
      constructor(props){
          super(props)
          this.data=[
-        {name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50},{name:'ios-add-circle',type:'ionicon',color:'#894d08',size:50}
+        {name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50},{name:'ios-add-circle',type:'ionicon',color:'#50BE64',size:50}
         ]
         this.initialState ={    
           title:'',
@@ -270,7 +270,7 @@ currentLatitude: 'unknown',//Initial Latitude,
         <SafeAreaView style={{flex:1}}>
         <View style={{flexDirection:'row',borderBottomColor:'gray',borderBottomWidth:2,paddingBottom:5}}>
         <TouchableOpacity onPress={()=>this.props.navigation.navigate('HomeScreen')}><Text style={{fontSize:30,marginLeft:10,marginTop:10}}>X</Text></TouchableOpacity>
-        <Text style={{fontSize:20,marginLeft:20,marginTop:20,fontWeight:'bold'}}>ADD LIST</Text>
+        <Text style={{fontSize:20,marginLeft:20,marginTop:20,fontWeight:'bold'}}>ADD LISTING</Text>
         <Icon
         name='ios-arrow-dropdown'
         type='ionicon'
@@ -310,7 +310,7 @@ currentLatitude: 'unknown',//Initial Latitude,
         label='Title'
         value={this.state.title}
         onChangeText={ (title) => this.setState({ title }) }
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
       />
       </KeyboardAvoidingView>
@@ -319,31 +319,22 @@ currentLatitude: 'unknown',//Initial Latitude,
         label='Description'
         value={this.state.description}
         onChangeText={ (description) => this.setState({ description }) }
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:15,marginRight:15}}
    characterRestriction={600}
       />
       </KeyboardAvoidingView>
-      <View style={{marginLeft:7,marginTop:7,flexDirection:'row'}}>
-      <View style={{flexBasis:'68%'}}>
+      <KeyboardAvoidingView>
       <TextField
         label='Price'
-        tintColor="darkred"
+        tintColor="green"
         containerStyle={{marginLeft:7,marginRight:15}}
         value={this.state.price}
         keyboardType='numeric'
+        placeholder='$'
         onChangeText={ (price) => this.setState({ price }) }
       />
-      </View>
-      <View style={{flexBasis:'30%'}}>
-      <Dropdown containerStyle={{marginLeft:3,marginRight:8}} 
-        label='Currency'
-      value={this.state.currency}
-      data={Currency}
-      onChangeText={text=>this.setState({currency:text})}
-/>
-      </View>
-      </View>
+      </KeyboardAvoidingView>
 
       <View style={{width:'100%',height:hp('9%'),backgroundColor:'white',flexDirection:'row',alignItems:'center'}}>
          <Text style={{marginLeft:10,color:'gray',fontSize:15,fontWeight:'bold'}}>Trade & Accept</Text>
@@ -355,7 +346,7 @@ currentLatitude: 'unknown',//Initial Latitude,
   uncheckedIcon='circle-o'
   checked={this.state.tradeYes}
   onPress={this.doTrade}
-  checkedColor='darkred'
+  checkedColor='green'
   containerStyle={{marginLeft:25,backgroundColor:'white',borderWidth:0}}
 />
 <CheckBox
@@ -366,7 +357,7 @@ currentLatitude: 'unknown',//Initial Latitude,
   checked={this.state.tradeNo}
   onPress={this.doTrade}
   containerStyle={{marginLeft:25,backgroundColor:'white',borderWidth:0}}
-  checkedColor='darkred'
+  checkedColor='green'
 />
 
       </View>
@@ -377,7 +368,7 @@ currentLatitude: 'unknown',//Initial Latitude,
       <CheckBox
   title='National'
  checked={this.state.National}
-checkedColor='darkred'
+checkedColor='green'
 containerStyle={{marginLeft:25,backgroundColor:'white',borderWidth:0}}
 
 onPress={this.getNational}
@@ -387,14 +378,14 @@ onPress={this.getNational}
   title='International'
   checked={this.state.International}
   containerStyle={{marginLeft:25,backgroundColor:'white',borderWidth:0}}
-  checkedColor='darkred'
+  checkedColor='green'
   onPress={this.getInternational}
 />
 
       </View>
   </View>
   <View style={{alignItems:'center',marginTop:10,marginBottom:10}}>
-  <TouchableOpacity disabled={this.state.uploading} onPress={this.uploadImages} style={{width:wp('90%'),height:hp('4%'),backgroundColor:'darkred',borderRadius:15,alignItems:'center',justifyContent:'center'}}>
+  <TouchableOpacity disabled={this.state.uploading} onPress={this.uploadImages} style={{width:wp('90%'),height:hp('4%'),backgroundColor:'darkgreen',borderRadius:15,alignItems:'center',justifyContent:'center'}}>
     {this.state.uploading===false && <Text style={{color:'white',fontSize:20}}>List Item</Text>}
     {this.state.uploading===true && <ActivityIndicator size={10} animating color='white'/>}
   </TouchableOpacity>
